@@ -42,6 +42,8 @@ var loadScript = function(url, callback){
   document.getElementsByTagName("head")[0].appendChild(script);
     
 };
+  
+  
 
 /* This is my app's JavaScript */
 var myAppJavaScript = function($){
@@ -49,15 +51,7 @@ var myAppJavaScript = function($){
   // Don't use jQuery, or jQuery191, use the dollar sign.
   // Do this and do that, using $.
   // When the user clicks on div, open the popup
-function popupopen() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.add("show");
-}
 
-function popupclose() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.remove("show");
-}
 
 var mouseX = 0;
 var mouseY = 0;
@@ -137,3 +131,13 @@ if ((typeof jQuery === 'undefined') || (parseFloat(jQuery.fn.jquery) < 1.7)) {
 }
 
 })();
+
+function popupopen() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.add("show");
+}
+
+function popupclose() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.remove("show");
+}
